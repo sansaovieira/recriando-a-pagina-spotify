@@ -25,11 +25,12 @@ body {
 
 .itens-menu ul{
     display: flex;
+    margin-right: 50px;
 }
 
 .itens-menu li{
     list-style: none;
-    margin: 20px 10px 20px 15px;
+    margin: 20px 15px;
 }
 .itens-menu a{
     text-decoration: none;
@@ -39,45 +40,44 @@ body {
     color: rgb(25, 230, 140);
 }
 
-.corpo {
+.secao-principal {
     background-color: rgb(25, 230, 140);
     text-align: center;
 }
 
-.imagens-corpo {
+.primeira-secao {
     display: flex;
     justify-content: center;
     margin: 0 0 10% auto;
     padding-top: 8%;
 }
 
-.img-1 {
+.primeira-secao-img-1 {
     position: absolute;
     width: 136px;
     z-index: 1;
 }
-.img-2 {
+.primeira-secao-img-2 {
     position: absolute;
     bottom: 59.5%;
     width: 34px;
-    z-index: 2;
-    
+    z-index: 2;    
     
 }
-.img-3 {
+.primeira-secao-img-3 {
     position: absolute;
     bottom: 61.5%;
     width: 11px;
     z-index: 3;
 }
 
-.corpo-textos h1, p {
+.corpo-textos h1{
     font-size: 43px;
     font-weight: 900;
     letter-spacing: -1px;
     line-height: 40px;
     color: inherit;
-    margin-top: 30px;
+    margin-top: 130px;
     
 }
 
@@ -87,6 +87,7 @@ body {
     line-height: 24px;
     letter-spacing: 0px;
     padding-bottom: 30px;
+    margin-top: 30px;
 }
 
 .corpo-textos button {
@@ -97,7 +98,7 @@ body {
     font-weight: bold;
     font-size: 14px;
     padding: 14px 32px;
-    margin-bottom: 15%;
+    margin-top: 5%;
 
 }
 
@@ -105,17 +106,17 @@ body {
     font-size: medium;
 }
 
-.corpo-2 {
+.segunda-secao {
     background-color: #fff;
     padding: 70px 15px;
 }
 
-.corpo-2 h2 {
+.segunda-secao h2 {
     font-size: 28px;
     font-weight: bolder;
 }
 
-.corpo-2 p {
+.segunda-secao p {
     font-size: 16px;
     padding: 0 0 0 16px;
     margin-bottom: 15px;
@@ -124,79 +125,161 @@ body {
     line-height: 36px;
 }
 
-.corpo-2 img {
+.segunda-secao img {
     margin: 5px;
     width: 120px;
 }
-.corpo-2-img-2 {
+.segunda-secao-img-2 {
     margin: -2px; 
     height: 100%;
-    width: 100%;
+    
 }
 
-.corpo-3 {
+.terceira-secao {
     background-color: rgb(34, 35, 38);
     padding: 70px 15px 50px;
 }
 
-.corpo-3 img {
+.terceira-secao img {
     width: 40%;
     padding-bottom: 30px;
 }
-.corpo-3 h3{
+.terceira-secao h3{
     color: #fff;
     font: 28px Helvetica, Arial, sans-serif;
     font-weight: bold;
     padding: 0 0 21px;
 }
 
-.corpo-3 ul{
+.terceira-secao ul{
     display: flex;
     font-weight: normal;
     justify-content: center;
-    color: #fff;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-.corpo-3 li {
+.terceira-secao li {
     margin: 15px;
+    color: rgb(29, 185, 84);
 
 }
 
-.corpo-3 a {
+.terceira-secao span{
+    color: #fff;
+}
+
+.terceira-secao a {
     color: rgb(29, 185, 84);
 }
 
-.corpo-3 a:hover {
+.terceira-secao a:hover {
     color: hsl(141, 68%, 52%);
 }
 
-footer {
+footer{
     background-color: #000;
 }
 
-.grupo-listas-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.listas-definicao {
+display: flex;
+flex-direction: row;
+width: 100%;
+
 }
 
-.grupo-listas-2 {
-    display: flex;
-    flex-direction: column;
-}
-
-.grupo-listas-3{
-    display: flex;
-    flex-direction: column;
-}
-
-.icone-rodape img{
+.logo-rodape img {
+    margin: 50px 30px 0 50px;
     width: 150px;
-    margin-left: 50px
 }
 
-.listas-definicao{
+.listas-definicao dl{
+    margin: 60px 0;
+    line-height: 40px;
+    text-align: justify;
     color: #fff;
 }
+
+.listas-definicao dt{
+    padding: 0 50px;
+    font-size: 12px;
+    color: #919496;
+    text-transform: uppercase;
+}
+
+.listas-definicao dd{
+    font-size: 16px;
+    padding: 0 50px;
+}
+
+.listas-definicao a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.listas-definicao a:hover {
+  color: rgb(25, 230, 140);
+
+}
+
+.icones-rodape {
+    margin: 40px 10px;
+}
+.icones-rodape ul{
+    display: flex;
+    /* width: 44px;
+    height: 44px; */
+    list-style: none;
+}
+
+.icones-rodape li {
+    margin: 5px;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #222326;
+  
+}
+
+.spotify-brasil {
+    display: flex;
+    justify-content: end;
+    margin: 20px 80px;
+    font-size: 12px;
+}
+
+.spotify-brasil a{
+    color: #919496;
+    text-decoration: none;
+}
+
+.spotify-brasil a:hover{
+    color: rgb(25, 230, 140);
+}
+
+.last-link-footer{
+    display: flex;
+    justify-content: space-between;
+    color: #919496;
+    margin: 0 80px;
+    font-size: 12px;
+}
+
+.last-link-footer ul{
+    display: flex;
+    list-style: none;
+    padding-bottom: 50px;
+}
+
+.last-link-footer li {
+    margin: 0 10px;
+}
+
+.last-link-footer a{
+    color: #919496;
+    text-decoration: none;
+}
+
+.last-link-footer a:hover {
+    color: rgb(25, 230, 140);
+}
+
